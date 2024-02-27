@@ -19,7 +19,6 @@ body {
     height: 100vh;
 }
 
-
 .container .img-container {
     display: flex;
     justify-content: center;
@@ -55,6 +54,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, .8);
     display: none;
+    
 }
 
 .pop-up img {
@@ -63,7 +63,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 5px solid #fff;
-    width: 100vh;
+    width: 60vh;
     height: 96vh;
     overflow: hidden;
 }
@@ -81,26 +81,9 @@ body {
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 3;
+    z-index: 1003;
 }
 
-
-/* ---------------------------------------------- */
-
-/* -----------media-for-img-in-pop-up------------ */
-@media (max-width: 1050) {
-    .pop-up {
-        width: 500px;
-    }
-    
-    .pop-up img {
-        width: 500px;
-    }
-    
-    .pop-up span {
-        width: 500px;
-    }
-}
 
 /* ---------------------------------------------- */
 
