@@ -26,7 +26,7 @@
         </button>
         <nav class="navbar">
             <ul class="navbar-list">
-                <li><a href="../main.html">Eduard</a></li>
+                <li><a href="../index.html">Eduard</a></li>
                 <div class="line-v"></div>
                 <li><a href="#section1">Общее фото с парнями</a></li>
                 <li><a href="../pages/second_page.html">Все вертикальные фото</a></li>
@@ -63,8 +63,8 @@
         document.querySelectorAll('.img-container img').forEach(img => {
             img.onclick = () => {
                 document.querySelector('.pop-up').style.display = 'block'
-                document.querySelector('.pop-up img').style.width = '650px'
-                document.querySelector('.pop-up img').style.height = '75vh'
+                document.querySelector('.pop-up img').style.width = '110vh'
+                document.querySelector('.pop-up img').style.height = '80vh'
                 document.querySelector('.pop-up img').src = img.getAttribute('src')
             }
         });

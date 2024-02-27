@@ -61,6 +61,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, .8);
     display: none;
+    z-index: 1001;
 }
 
 .pop-up img {
@@ -73,10 +74,7 @@ body {
     width: 75vh;
     overflow: hidden;
 }   
-/* width: 500px;
-    height: 300px;
-    border: 10px solid #fff;
-    overflow: hidden; */
+
 .pop-up span {
     position: fixed;
     top: 10px;
@@ -185,6 +183,7 @@ body {
     position: fixed;
     z-index: 1000;
     /* background-color: #fff; */
+
 }
 
 .navbar-list {

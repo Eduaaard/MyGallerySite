@@ -10,6 +10,7 @@ h1 {
     justify-content: flex-end;
     margin-right: 2%;
     margin-top: -1%;
+
 }
 
 body {
@@ -62,7 +63,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 5px solid #fff;
-    width: 1200px;
+    width: 100vh;
     height: 96vh;
     overflow: hidden;
 }
