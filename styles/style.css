@@ -99,6 +99,7 @@ body {
     background-color: transparent;
     z-index: 1;
     color: #fff;
+    padding: 25px 25px 25px 25px;
 }
 .header__burger-btn span{
     position: absolute;

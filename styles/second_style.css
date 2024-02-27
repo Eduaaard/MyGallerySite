@@ -109,6 +109,7 @@ body {
     background-color: transparent;
     z-index: 1;
     color: #fff;
+    padding: 30px 30px 30px 30px;
 }
 .header__burger-btn span{
     position: absolute;
@@ -118,6 +119,7 @@ body {
     left: 5px;
     transition: transform .5s, opacity .5s, 
     background-color.5s;
+    
 }
 .header__burger-btn span:nth-child(1){
     transform: translateY(-10px);
@@ -194,7 +196,7 @@ body {
 /* ---------------------------------------------- */
 .navbar {
     /* padding: 10px; */
-    margin: 20px 0px 0px 30px;
+    margin: 50px 0px 0px 30px;
     position: fixed;
     z-index: 1000;
     /* background-color: #fff; */
