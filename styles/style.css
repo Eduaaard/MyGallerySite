@@ -71,7 +71,7 @@ body {
 .pop-up span {
     position: fixed;
     top: 10px;
-    right: 14vh;
+    right: 2vh;
     width: 47px;
     height: 47px;
     background: #fff;
@@ -83,6 +83,7 @@ body {
     cursor: pointer;
     z-index: 1003;
 }
+
 
 
 /* ---------------------------------------------- */
