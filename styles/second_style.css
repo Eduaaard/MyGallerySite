@@ -18,11 +18,13 @@ body {
     height: 100vh;
 }
 
-/* .container{
+.section > .container{
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+    overflow-y: hidden;
+    overflow: hidden;
+}
 
 .container .img-container {
     display: flex;
@@ -30,6 +32,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    
 
 }
 
@@ -46,7 +49,7 @@ body {
     object-fit: cover;
     cursor: pointer;
     transition: 0.5s;
-    
+    overflow-x: hidden;
 }
 
 .container .img-container .img:hover img {
@@ -62,8 +65,8 @@ body {
     background: rgba(0, 0, 0, .8);
     display: none;
     z-index: 1003;
+    
 }
-
 .pop-up img {
     position: absolute;
     top: 50%;
@@ -73,13 +76,15 @@ body {
     height: 83vh;
     width: 63vh;
     overflow: hidden;
+    
 }   
 
-@media (max-width< 620){
+@media (max-width: 620){
     .pop-up img{
         height: 80vh;
         width: 65vh;
-
+        position: fixed;
+        overflow-y: hidden;
     }
 }
 
@@ -97,29 +102,32 @@ body {
     border-radius: 50%;
     cursor: pointer;
     z-index: 1003;
+    overflow: hidden;
+    
 }
 
 /* ------------==----burger-menu----------------- */
 .header__burger-btn{
     display: none;
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
     width: 40px;
     height: 40px;
     border: none;
     background-color: transparent;
-    z-index: 1;
-    color: #fff;
-    padding: 30px 30px 30px 30px;
+    z-index: 900;
+    color: black;
+    /* padding: 15px 30px 30px 312px; */
 }
 .header__burger-btn span{
     position: absolute;
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: black;
     left: 5px;
     transition: transform .5s, opacity .5s, 
     background-color.5s;
-    
+    /* margin: 10px 10px 10px 10px; */
 }
 .header__burger-btn span:nth-child(1){
     transform: translateY(-10px);
@@ -139,29 +147,34 @@ body {
 }
 
 @media (max-width: 1342px) {
-    h1{
+    h1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
         font-size: 50px;
     }
 
     .header__burger-btn{
         display: block;
-        z-index: 100;
+        position: absolute;
+        z-index: 900;
     }
 
     .navbar{
         position: absolute;
         left: -350px;
-        top: 0;
+        top: -50px;
         width: 350px;
-        background-color: transparent;
-        padding: 20px 20px 20px 20px;
-        /* margin-top: -15px; */
+        padding: 200px 20px 100vh 20px;
+        /* margin-top: 15px; */
         /* margin-left: -15px; */
         transition: transform .5s;
-        /* background-color: #c0c0c0; */
+        background-color: #fff;
+        /* margin: 150px 10px 10px 10px; */
+        z-index: 899;
     }
     .navbar-list{
-        flex-direction: column
+        flex-direction: column;
     }
 
     .navbar-list li a{
@@ -174,9 +187,12 @@ body {
     .header.open .navbar{
         transform: translateX(100%);
     }
+
+    /* .header{
+        position: absolute;
+    } */
 }
 /* ---------------------------------------------- */
-
 
 /* ---------------------------------------------- */
 .line{
@@ -196,9 +212,9 @@ body {
 /* ---------------------------------------------- */
 .navbar {
     /* padding: 10px; */
-    margin: 50px 0px 0px 30px;
-    position: fixed;
-    z-index: 1000;
+    margin: 50px 0px 0px 0px;
+    /* position: fixed; */
+    /* z-index: 1000; */
     /* background-color: #fff; */
 
 }
@@ -251,17 +267,18 @@ body {
 
 .section {
     padding: 20px;
-    overflow-y  : hidden;
+    overflow-y: hidden;
     margin-top: 2%;
 }
 
 .section:nth-child(even) {
     background-color: #c0c0c0;
+    overflow-y: hidden;
 }
 
 
 /* ---------------------------------------------- */
 
-/* ------------------Preolader--------------------- */
+/* ------------------overlay--------------------- */
 
 /* ---------------------------------------------- */
